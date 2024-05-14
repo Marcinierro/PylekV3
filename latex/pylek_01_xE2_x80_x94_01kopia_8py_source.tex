@@ -1,0 +1,96 @@
+\doxysubsection{pylek — kopia.\+py}
+\label{pylek_01_xE2_x80_x94_01kopia_8py_source}\textbf{ Idź do dokumentacji tego pliku.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{import}\ json}
+\DoxyCodeLine{00002\ \textcolor{keyword}{from}\ typing\ \textcolor{keyword}{import}\ Dict}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }Pylek():}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{def\ }\_\_init\_\_(self,\ stan\_wewnetrzny:\ str)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ self.\_stan\_wewnetrzny\ =\ stan\_wewnetrzny}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{def\ }operation(self,\ stan\_zewnetrzny:\ str)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ s\ =\ json.dumps(self.\_stan\_wewnetrzny)}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ u\ =\ json.dumps(stan\_zewnetrzny)}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}Pylek:\ Stan\ wewnętrzny\ (\{s\})\ i\ stan\ zewnętrzny\ (\{u\})."{}},\ end=\textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }FabrykaPylkow():}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \_Pylki:\ Dict[str,\ Pylek]\ =\ \{\}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{def\ }\_\_init\_\_(self,\ pylki\_poczatkowe:\ Dict)\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ stan\ \textcolor{keywordflow}{in}\ pylki\_poczatkowe:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ self.\_Pylki[self.uzyskaj\_klucz(stan)]\ =\ Pylek(stan)}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{def\ }uzyskaj\_klucz(self,\ stan:\ Dict)\ -\/>\ str:}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}\_"{}}.join(sorted(stan))}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{def\ }uzyskaj\_pylek(self,\ stan\_wewnetrzny:\ Dict)\ -\/>\ Pylek:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ klucz\ =\ self.uzyskaj\_klucz(stan\_wewnetrzny)}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keywordflow}{not}\ self.\_Pylki.get(klucz):}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}FabrykaPylkow:\ Nie\ mogę\ znaleźć\ pyłka.\ Tworzę\ nowy."{}})}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ self.\_Pylki[klucz]\ =\ Pylek(stan\_wewnetrzny)}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}FabrykaPylkow:\ Korzystam\ z\ istniejącego\ pyłka"{}})}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self.\_Pylki[klucz]}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{def\ }wypisz\_pylki(self)\ -\/>\ None:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ ilosc\ =\ len(self.\_Pylki)}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}FabrykaPylkow:\ Mam\ \{ilosc\}\ pylkow:"{}})}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}}.join(map(str,\ self.\_Pylki.keys())),\ end=\textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{def\ }dodaj\_samochod\_do\_bazy(}
+\DoxyCodeLine{00046\ \ \ \ \ fabryka:\ FabrykaPylkow,\ blachy:\ str,\ wlasciciel:\ str,}
+\DoxyCodeLine{00047\ \ \ \ \ marka:\ str,\ model:\ str,\ kolor:\ str}
+\DoxyCodeLine{00048\ )\ -\/>\ \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00049\ \ \ \ \ print(\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nKlient:\ Dodaje\ samochod\ do\ bazy."{}})}
+\DoxyCodeLine{00050\ \ \ \ \ pylek\ =\ fabryka.uzyskaj\_pylek([marka,\ model,\ kolor])}
+\DoxyCodeLine{00051\ \ \ \ \ pylek.operation([blachy,\ wlasciciel])}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keywordflow}{if}\ \_\_name\_\_\ ==\ \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ fabryka\ =\ FabrykaPylkow([}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}Chevrolet"{}},\ \textcolor{stringliteral}{"{}spark"{}},\ \textcolor{stringliteral}{"{}zielony"{}}],}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}Ford"{}},\ \textcolor{stringliteral}{"{}mustang"{}},\ \textcolor{stringliteral}{"{}czerwony"{}}],}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}Toyota"{}},\ \textcolor{stringliteral}{"{}yaris"{}},\ \textcolor{stringliteral}{"{}czarny"{}}],}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}Citroen"{}},\ \textcolor{stringliteral}{"{}xsara\_picasso"{}},\ \textcolor{stringliteral}{"{}niebieski"{}}],}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}BMW"{}},\ \textcolor{stringliteral}{"{}x6"{}},\ \textcolor{stringliteral}{"{}szary"{}}],}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}Citroen"{}},\ \textcolor{stringliteral}{"{}c6"{}},\ \textcolor{stringliteral}{"{}bialy"{}}],}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}KIA"{}},\ \textcolor{stringliteral}{"{}proceed"{}},\ \textcolor{stringliteral}{"{}czarny"{}}],}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}Seat"{}},\ \textcolor{stringliteral}{"{}leon"{}},\ \textcolor{stringliteral}{"{}czerwony"{}}],}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}Renault"{}},\ \textcolor{stringliteral}{"{}megane"{}},\ \textcolor{stringliteral}{"{}zloty"{}}],}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}Peugeot"{}},\ \textcolor{stringliteral}{"{}308"{}},\ \textcolor{stringliteral}{"{}zielony"{}}],}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}Wolksvagen"{}},\ \textcolor{stringliteral}{"{}golf"{}},\ \textcolor{stringliteral}{"{}szary"{}}],}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}Toyota"{}},\ \textcolor{stringliteral}{"{}corolla"{}},\ \textcolor{stringliteral}{"{}bialy"{}}],}
+\DoxyCodeLine{00069\ \ \ \ \ ])}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ fabryka.wypisz\_pylki()}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ dodaj\_samochod\_do\_bazy(}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ fabryka,\ \textcolor{stringliteral}{"{}XYZ12345"{}},\ \textcolor{stringliteral}{"{}Jan\ Kowalski"{}},\ \textcolor{stringliteral}{"{}BMW"{}},\ \textcolor{stringliteral}{"{}x6"{}},\ \textcolor{stringliteral}{"{}szary"{}})}
+\DoxyCodeLine{00075\ \ \ \ \ dodaj\_samochod\_do\_bazy(}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ fabryka,\ \textcolor{stringliteral}{"{}XYZ98765"{}},\ \textcolor{stringliteral}{"{}Anna\ Nowak"{}},\ \textcolor{stringliteral}{"{}Toyota"{}},\ \textcolor{stringliteral}{"{}corolla"{}},\ \textcolor{stringliteral}{"{}bialy"{}})}
+\DoxyCodeLine{00077\ \ \ \ \ dodaj\_samochod\_do\_bazy(}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ fabryka,\ \textcolor{stringliteral}{"{}ABC98765"{}},\ \textcolor{stringliteral}{"{}Zuzanna\ Sitek"{}},\ \textcolor{stringliteral}{"{}Renault"{}},\ \textcolor{stringliteral}{"{}megane"{}},\ \textcolor{stringliteral}{"{}zloty"{}})}
+\DoxyCodeLine{00079\ \ \ \ \ dodaj\_samochod\_do\_bazy(}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ fabryka,\ \textcolor{stringliteral}{"{}ABC13579"{}},\ \textcolor{stringliteral}{"{}Karol\ Krawczyk"{}},\ \textcolor{stringliteral}{"{}Ford"{}},\ \textcolor{stringliteral}{"{}mustang"{}},\ \textcolor{stringliteral}{"{}zloty"{}})}
+\DoxyCodeLine{00081\ \ \ \ \ dodaj\_samochod\_do\_bazy(}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ fabryka,\ \textcolor{stringliteral}{"{}TVN24680"{}},\ \textcolor{stringliteral}{"{}Tadeusz\ Norek"{}},\ \textcolor{stringliteral}{"{}KIA"{}},\ \textcolor{stringliteral}{"{}proceed"{}},\ \textcolor{stringliteral}{"{}czarny"{}})}
+\DoxyCodeLine{00083\ \ \ \ \ dodaj\_samochod\_do\_bazy(}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ fabryka,\ \textcolor{stringliteral}{"{}TVN78272"{}},\ \textcolor{stringliteral}{"{}Józef\ Budka"{}},\ \textcolor{stringliteral}{"{}Chevrolet"{}},\ \textcolor{stringliteral}{"{}spark"{}},\ \textcolor{stringliteral}{"{}zielony"{}})}
+\DoxyCodeLine{00085\ \ \ \ \ dodaj\_samochod\_do\_bazy(}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ fabryka,\ \textcolor{stringliteral}{"{}TVP95321"{}},\ \textcolor{stringliteral}{"{}Robert\ Narewny"{}},\ \textcolor{stringliteral}{"{}Fiat"{}},\ \textcolor{stringliteral}{"{}multipla"{}},\ \textcolor{stringliteral}{"{}bialy"{}})}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}})}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ fabryka.wypisz\_pylki()}
+\DoxyCodeLine{00091\ \ }
+
+\end{DoxyCode}

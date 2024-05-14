@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pylek: Plik źródłowy pylek.py</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Pylek<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Simple program that uses Flyweight</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">pylek.py</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="pylek_8py.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespacepylek.html">    1</a></span><span class="keyword">import</span> json</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">from</span> typing <span class="keyword">import</span> Dict</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00004" data-start="" data-end="">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="classpylek_1_1_pylek.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="classpylek_1_1_pylek.html">Pylek</a>():</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00006" data-start="" data-end="">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classpylek_1_1_pylek.html#aba255458d0a11c5ff83fdf696f02b590">    6</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classpylek_1_1_pylek.html#aba255458d0a11c5ff83fdf696f02b590">__init__</a>(self, stan_wewnetrzny: str) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classpylek_1_1_pylek.html#aa4c26ac7210950946e05c517772241d9">    7</a></span>        self.<a class="code hl_variable" href="classpylek_1_1_pylek.html#aa4c26ac7210950946e05c517772241d9">_stan_wewnetrzny</a> = stan_wewnetrzny</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+</div>
+<div class="foldopen" id="foldopen00009" data-start="" data-end="">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classpylek_1_1_pylek.html#a28241bb0ba2c60cbe83a4812240004d0">    9</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classpylek_1_1_pylek.html#a28241bb0ba2c60cbe83a4812240004d0">operation</a>(self, stan_zewnetrzny: str) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        s = json.dumps(self.<a class="code hl_variable" href="classpylek_1_1_pylek.html#aa4c26ac7210950946e05c517772241d9">_stan_wewnetrzny</a>)</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        u = json.dumps(stan_zewnetrzny)</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        print(f<span class="stringliteral">&quot;Pylek: Stan wewnętrzny ({s}) i stan zewnętrzny ({u}).&quot;</span>, end=<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+</div>
+</div>
+<div class="foldopen" id="foldopen00015" data-start="" data-end="">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classpylek_1_1_fabryka_pylkow.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classpylek_1_1_fabryka_pylkow.html">FabrykaPylkow</a>():</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classpylek_1_1_fabryka_pylkow.html#a73065963a0ca226bfc14c5dae9351748">   18</a></span>    _Pylki: Dict[str, Pylek] = {}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="" data-end="">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classpylek_1_1_fabryka_pylkow.html#a5fa92100e6a5d549fbaaa199bf9f749b">   20</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classpylek_1_1_fabryka_pylkow.html#a5fa92100e6a5d549fbaaa199bf9f749b">__init__</a>(self, pylki_poczatkowe: Dict) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">for</span> stan <span class="keywordflow">in</span> pylki_poczatkowe:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            self.<a class="code hl_variable" href="classpylek_1_1_fabryka_pylkow.html#a73065963a0ca226bfc14c5dae9351748">_Pylki</a>[self.<a class="code hl_function" href="classpylek_1_1_fabryka_pylkow.html#ac782f8771b10c8344fa20a54c7bc1e29">uzyskaj_klucz</a>(stan)] = <a class="code hl_class" href="classpylek_1_1_pylek.html">Pylek</a>(stan)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+</div>
+<div class="foldopen" id="foldopen00024" data-start="" data-end="">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classpylek_1_1_fabryka_pylkow.html#ac782f8771b10c8344fa20a54c7bc1e29">   24</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classpylek_1_1_fabryka_pylkow.html#ac782f8771b10c8344fa20a54c7bc1e29">uzyskaj_klucz</a>(self, stan: Dict) -&gt; str:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;_&quot;</span>.join(sorted(stan))</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+</div>
+<div class="foldopen" id="foldopen00028" data-start="" data-end="">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classpylek_1_1_fabryka_pylkow.html#ab428088c9ce03980067c2455f7bfe33f">   28</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classpylek_1_1_fabryka_pylkow.html#ab428088c9ce03980067c2455f7bfe33f">uzyskaj_pylek</a>(self, stan_wewnetrzny: Dict) -&gt; Pylek:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        klucz = self.<a class="code hl_function" href="classpylek_1_1_fabryka_pylkow.html#ac782f8771b10c8344fa20a54c7bc1e29">uzyskaj_klucz</a>(stan_wewnetrzny)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> self.<a class="code hl_variable" href="classpylek_1_1_fabryka_pylkow.html#a73065963a0ca226bfc14c5dae9351748">_Pylki</a>.get(klucz):</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            print(<span class="stringliteral">&quot;FabrykaPylkow: Nie mogę znaleźć pyłka. Tworzę nowy.&quot;</span>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            self.<a class="code hl_variable" href="classpylek_1_1_fabryka_pylkow.html#a73065963a0ca226bfc14c5dae9351748">_Pylki</a>[klucz] = <a class="code hl_class" href="classpylek_1_1_pylek.html">Pylek</a>(stan_wewnetrzny)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            print(<span class="stringliteral">&quot;FabrykaPylkow: Korzystam z istniejącego pyłka&quot;</span>)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> self.<a class="code hl_variable" href="classpylek_1_1_fabryka_pylkow.html#a73065963a0ca226bfc14c5dae9351748">_Pylki</a>[klucz]</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+</div>
+<div class="foldopen" id="foldopen00039" data-start="" data-end="">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classpylek_1_1_fabryka_pylkow.html#a8f4a6635b86a2701be6fd6f163c20057">   39</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classpylek_1_1_fabryka_pylkow.html#a8f4a6635b86a2701be6fd6f163c20057">wypisz_pylki</a>(self) -&gt; None:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        ilosc = len(self.<a class="code hl_variable" href="classpylek_1_1_fabryka_pylkow.html#a73065963a0ca226bfc14c5dae9351748">_Pylki</a>)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        print(f<span class="stringliteral">&quot;FabrykaPylkow: Mam {ilosc} pylkow:&quot;</span>)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        print(<span class="stringliteral">&quot;\n&quot;</span>.join(map(str, self.<a class="code hl_variable" href="classpylek_1_1_fabryka_pylkow.html#a73065963a0ca226bfc14c5dae9351748">_Pylki</a>.keys())), end=<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+</div>
+</div>
+<div class="foldopen" id="foldopen00045" data-start="" data-end="">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespacepylek.html#a23c6740c8146eb59d09558048c15b5f6">   45</a></span><span class="keyword">def </span><a class="code hl_function" href="namespacepylek.html#a23c6740c8146eb59d09558048c15b5f6">dodaj_samochod_do_bazy</a>(</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    fabryka: FabrykaPylkow, blachy: str, wlasciciel: str,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    marka: str, model: str, kolor: str</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>) -&gt; <span class="keywordtype">None</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    print(<span class="stringliteral">&quot;\n\nKlient: Dodaje samochod do bazy.&quot;</span>)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    pylek = fabryka.uzyskaj_pylek([marka, model, kolor])</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    pylek.operation([blachy, wlasciciel])</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="namespacepylek.html#ad2dda7ab4017a269580e17dc42ed7029">   56</a></span>    fabryka = <a class="code hl_class" href="classpylek_1_1_fabryka_pylkow.html">FabrykaPylkow</a>([</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        [<span class="stringliteral">&quot;Chevrolet&quot;</span>, <span class="stringliteral">&quot;spark&quot;</span>, <span class="stringliteral">&quot;zielony&quot;</span>],</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        [<span class="stringliteral">&quot;Ford&quot;</span>, <span class="stringliteral">&quot;mustang&quot;</span>, <span class="stringliteral">&quot;czerwony&quot;</span>],</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        [<span class="stringliteral">&quot;Toyota&quot;</span>, <span class="stringliteral">&quot;yaris&quot;</span>, <span class="stringliteral">&quot;czarny&quot;</span>],</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        [<span class="stringliteral">&quot;Citroen&quot;</span>, <span class="stringliteral">&quot;xsara_picasso&quot;</span>, <span class="stringliteral">&quot;niebieski&quot;</span>],</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        [<span class="stringliteral">&quot;BMW&quot;</span>, <span class="stringliteral">&quot;x6&quot;</span>, <span class="stringliteral">&quot;szary&quot;</span>],</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        [<span class="stringliteral">&quot;Citroen&quot;</span>, <span class="stringliteral">&quot;c6&quot;</span>, <span class="stringliteral">&quot;bialy&quot;</span>],</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        [<span class="stringliteral">&quot;KIA&quot;</span>, <span class="stringliteral">&quot;proceed&quot;</span>, <span class="stringliteral">&quot;czarny&quot;</span>],</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        [<span class="stringliteral">&quot;Seat&quot;</span>, <span class="stringliteral">&quot;leon&quot;</span>, <span class="stringliteral">&quot;czerwony&quot;</span>],</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        [<span class="stringliteral">&quot;Renault&quot;</span>, <span class="stringliteral">&quot;megane&quot;</span>, <span class="stringliteral">&quot;zloty&quot;</span>],</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        [<span class="stringliteral">&quot;Peugeot&quot;</span>, <span class="stringliteral">&quot;308&quot;</span>, <span class="stringliteral">&quot;zielony&quot;</span>],</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        [<span class="stringliteral">&quot;Wolksvagen&quot;</span>, <span class="stringliteral">&quot;golf&quot;</span>, <span class="stringliteral">&quot;szary&quot;</span>],</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        [<span class="stringliteral">&quot;Toyota&quot;</span>, <span class="stringliteral">&quot;corolla&quot;</span>, <span class="stringliteral">&quot;bialy&quot;</span>],</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    ])</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    fabryka.wypisz_pylki()</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_function" href="namespacepylek.html#a23c6740c8146eb59d09558048c15b5f6">dodaj_samochod_do_bazy</a>(</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        fabryka, <span class="stringliteral">&quot;XYZ12345&quot;</span>, <span class="stringliteral">&quot;Jan Kowalski&quot;</span>, <span class="stringliteral">&quot;BMW&quot;</span>, <span class="stringliteral">&quot;x6&quot;</span>, <span class="stringliteral">&quot;szary&quot;</span>)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_function" href="namespacepylek.html#a23c6740c8146eb59d09558048c15b5f6">dodaj_samochod_do_bazy</a>(</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        fabryka, <span class="stringliteral">&quot;XYZ98765&quot;</span>, <span class="stringliteral">&quot;Anna Nowak&quot;</span>, <span class="stringliteral">&quot;Toyota&quot;</span>, <span class="stringliteral">&quot;corolla&quot;</span>, <span class="stringliteral">&quot;bialy&quot;</span>)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_function" href="namespacepylek.html#a23c6740c8146eb59d09558048c15b5f6">dodaj_samochod_do_bazy</a>(</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        fabryka, <span class="stringliteral">&quot;ABC98765&quot;</span>, <span class="stringliteral">&quot;Zuzanna Sitek&quot;</span>, <span class="stringliteral">&quot;Renault&quot;</span>, <span class="stringliteral">&quot;megane&quot;</span>, <span class="stringliteral">&quot;zloty&quot;</span>)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_function" href="namespacepylek.html#a23c6740c8146eb59d09558048c15b5f6">dodaj_samochod_do_bazy</a>(</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        fabryka, <span class="stringliteral">&quot;ABC13579&quot;</span>, <span class="stringliteral">&quot;Karol Krawczyk&quot;</span>, <span class="stringliteral">&quot;Ford&quot;</span>, <span class="stringliteral">&quot;mustang&quot;</span>, <span class="stringliteral">&quot;zloty&quot;</span>)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="namespacepylek.html#a23c6740c8146eb59d09558048c15b5f6">dodaj_samochod_do_bazy</a>(</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        fabryka, <span class="stringliteral">&quot;TVN24680&quot;</span>, <span class="stringliteral">&quot;Tadeusz Norek&quot;</span>, <span class="stringliteral">&quot;KIA&quot;</span>, <span class="stringliteral">&quot;proceed&quot;</span>, <span class="stringliteral">&quot;czarny&quot;</span>)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_function" href="namespacepylek.html#a23c6740c8146eb59d09558048c15b5f6">dodaj_samochod_do_bazy</a>(</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        fabryka, <span class="stringliteral">&quot;TVN78272&quot;</span>, <span class="stringliteral">&quot;Józef Budka&quot;</span>, <span class="stringliteral">&quot;Chevrolet&quot;</span>, <span class="stringliteral">&quot;spark&quot;</span>, <span class="stringliteral">&quot;zielony&quot;</span>)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_function" href="namespacepylek.html#a23c6740c8146eb59d09558048c15b5f6">dodaj_samochod_do_bazy</a>(</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        fabryka, <span class="stringliteral">&quot;TVP95321&quot;</span>, <span class="stringliteral">&quot;Robert Narewny&quot;</span>, <span class="stringliteral">&quot;Fiat&quot;</span>, <span class="stringliteral">&quot;multipla&quot;</span>, <span class="stringliteral">&quot;bialy&quot;</span>)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    print(<span class="stringliteral">&quot;\n&quot;</span>)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    fabryka.wypisz_pylki()</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="ttc" id="aclasspylek_1_1_fabryka_pylkow_html"><div class="ttname"><a href="classpylek_1_1_fabryka_pylkow.html">pylek.FabrykaPylkow</a></div><div class="ttdef"><b>Definition</b> <a href="#l00015">pylek.py:15</a></div></div>
+<div class="ttc" id="aclasspylek_1_1_fabryka_pylkow_html_a5fa92100e6a5d549fbaaa199bf9f749b"><div class="ttname"><a href="classpylek_1_1_fabryka_pylkow.html#a5fa92100e6a5d549fbaaa199bf9f749b">pylek.FabrykaPylkow.__init__</a></div><div class="ttdeci">None __init__(self, Dict pylki_poczatkowe)</div><div class="ttdef"><b>Definition</b> <a href="#l00020">pylek.py:20</a></div></div>
+<div class="ttc" id="aclasspylek_1_1_fabryka_pylkow_html_a73065963a0ca226bfc14c5dae9351748"><div class="ttname"><a href="classpylek_1_1_fabryka_pylkow.html#a73065963a0ca226bfc14c5dae9351748">pylek.FabrykaPylkow._Pylki</a></div><div class="ttdeci">dict _Pylki</div><div class="ttdef"><b>Definition</b> <a href="#l00018">pylek.py:18</a></div></div>
+<div class="ttc" id="aclasspylek_1_1_fabryka_pylkow_html_a8f4a6635b86a2701be6fd6f163c20057"><div class="ttname"><a href="classpylek_1_1_fabryka_pylkow.html#a8f4a6635b86a2701be6fd6f163c20057">pylek.FabrykaPylkow.wypisz_pylki</a></div><div class="ttdeci">None wypisz_pylki(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00039">pylek.py:39</a></div></div>
+<div class="ttc" id="aclasspylek_1_1_fabryka_pylkow_html_ab428088c9ce03980067c2455f7bfe33f"><div class="ttname"><a href="classpylek_1_1_fabryka_pylkow.html#ab428088c9ce03980067c2455f7bfe33f">pylek.FabrykaPylkow.uzyskaj_pylek</a></div><div class="ttdeci">Pylek uzyskaj_pylek(self, Dict stan_wewnetrzny)</div><div class="ttdef"><b>Definition</b> <a href="#l00028">pylek.py:28</a></div></div>
+<div class="ttc" id="aclasspylek_1_1_fabryka_pylkow_html_ac782f8771b10c8344fa20a54c7bc1e29"><div class="ttname"><a href="classpylek_1_1_fabryka_pylkow.html#ac782f8771b10c8344fa20a54c7bc1e29">pylek.FabrykaPylkow.uzyskaj_klucz</a></div><div class="ttdeci">str uzyskaj_klucz(self, Dict stan)</div><div class="ttdef"><b>Definition</b> <a href="#l00024">pylek.py:24</a></div></div>
+<div class="ttc" id="aclasspylek_1_1_pylek_html"><div class="ttname"><a href="classpylek_1_1_pylek.html">pylek.Pylek</a></div><div class="ttdef"><b>Definition</b> <a href="#l00004">pylek.py:4</a></div></div>
+<div class="ttc" id="aclasspylek_1_1_pylek_html_a28241bb0ba2c60cbe83a4812240004d0"><div class="ttname"><a href="classpylek_1_1_pylek.html#a28241bb0ba2c60cbe83a4812240004d0">pylek.Pylek.operation</a></div><div class="ttdeci">None operation(self, str stan_zewnetrzny)</div><div class="ttdef"><b>Definition</b> <a href="#l00009">pylek.py:9</a></div></div>
+<div class="ttc" id="aclasspylek_1_1_pylek_html_aa4c26ac7210950946e05c517772241d9"><div class="ttname"><a href="classpylek_1_1_pylek.html#aa4c26ac7210950946e05c517772241d9">pylek.Pylek._stan_wewnetrzny</a></div><div class="ttdeci">_stan_wewnetrzny</div><div class="ttdef"><b>Definition</b> <a href="#l00007">pylek.py:7</a></div></div>
+<div class="ttc" id="aclasspylek_1_1_pylek_html_aba255458d0a11c5ff83fdf696f02b590"><div class="ttname"><a href="classpylek_1_1_pylek.html#aba255458d0a11c5ff83fdf696f02b590">pylek.Pylek.__init__</a></div><div class="ttdeci">None __init__(self, str stan_wewnetrzny)</div><div class="ttdef"><b>Definition</b> <a href="#l00006">pylek.py:6</a></div></div>
+<div class="ttc" id="anamespacepylek_html_a23c6740c8146eb59d09558048c15b5f6"><div class="ttname"><a href="namespacepylek.html#a23c6740c8146eb59d09558048c15b5f6">pylek.dodaj_samochod_do_bazy</a></div><div class="ttdeci">None dodaj_samochod_do_bazy(FabrykaPylkow fabryka, str blachy, str wlasciciel, str marka, str model, str kolor)</div><div class="ttdef"><b>Definition</b> <a href="#l00045">pylek.py:48</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
