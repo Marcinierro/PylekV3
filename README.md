@@ -1,1 +1,1 @@
-Another version of a simple program using flyweight design pattern.
+Modified version of simple program using flyweight design pattern (also known as "Pyłek" in Polish).
